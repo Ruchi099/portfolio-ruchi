@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ruchi Prajapati | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+
+html{scroll-behavior:smooth;}
+
+body{
+font-family:'Plus Jakarta Sans',sans-serif;
+margin:0;
+background:#cdcedc;
+color:#111827;
+}
+
+/* NAVBAR */
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:white;
+border-bottom:1px solid #e5e7eb;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 5%;
+z-index:1000;
+}
+
+.nav-logo{
+font-family:'Outfit';
+font-weight:800;
+font-size:20px;
+color:#111827;
+text-decoration:none;
+}
+
+.nav-logo span{
+color:#4f46e5;
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:22px;
+list-style:none;
+flex-wrap:nowrap;
+}
+
+.nav-links a{
+text-decoration:none;
+font-size:14px;
+color:#4b5563;
+font-weight:500;
+transition:0.25s;
+}
+
+.nav-links a:hover{
+color:#4f46e5;
+}
+@media(max-width:1000px){
+
+.nav-links{
+gap:14px;
+font-size:13px;
+}
+
+}
+
+
+
+/* HOME LAYOUT */
+
+.home-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+max-width:1100px;
+margin:auto;
+padding-top:120px;
+}
+
+.home-text{
+flex:1;
+}
+
+.home-image{
+flex:1;
+display:flex;
+justify-content:flex-end;
+}
+
+/* BIG CIRCLE PHOTO */
+
+.profile-circle{
+width:300px;
+height:300px;
+border-radius:50%;
+overflow:hidden;
+border:6px solid white;
+box-shadow:0 25px 60px rgba(0,0,0,0.25);
+}
+
+.profile-circle img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* HOVER EFFECT */
+
+.profile-circle:hover{
+transform:scale(1.05);
+transition:0.3s;
+}
+@media(max-width:900px){
+
+.home-container{
+flex-direction:column;
+text-align:center;
+}
+
+.home-image{
+justify-content:center;
+margin-top:30px;
+}
+
+.profile-circle{
+width:220px;
+height:220px;
+}
+
+}
+
+}
+.hero-name{
+font-family:'Outfit';
+font-size:50px;
+font-weight:900;
+margin:10px 0;
+}
+
+.hero-name em{color:#4f46e5;font-style:normal}
+
+.hero-role{
+font-size:18px;
+color:#6b7280;
+font-weight:600;
+}
+
+.hero-desc{
+margin-top:15px;
+line-height:1.7;
+color:#4b5563;
+max-width:500px;
+}
+
+
+
+/* SECTION */
+
+section{
+padding:80px 7%;
+max-width:1100px;
+margin:auto;
+}
+
+.section-title{
+font-family:'Outfit';
+font-size:36px;
+margin-bottom:15px;
+font-weight:800;
+position:relative;
+}
+
+.section-title em{
+color:#4f46e5;
+font-style:normal;
+}
+
+.section-title::after{
+content:"";
+display:block;
+width:50px;
+height:3px;
+background:#4f46e5;
+margin-top:8px;
+border-radius:2px;
+}
+
+/* PROJECTS */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.project-card{
+background:white;
+border-radius:14px;
+padding:22px;
+border:1px solid #e5e7eb;
+transition:0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+}
+
+.project-name{
+font-family:'Outfit';
+font-weight:700;
+margin-bottom:10px;
+}
+
+.project-desc{
+font-size:14px;
+color:#6b7280;
+line-height:1.6;
+}
+
+.project-techs{
+margin-top:12px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.ptag{
+font-size:12px;
+padding:4px 8px;
+background:#eef2ff;
+border-radius:4px;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:25px;
+}
+
+.skill{
+background:#eef2ff;
+padding:7px 12px;
+border-radius:6px;
+font-size:13px;
+font-weight:500;
+}
+
+/* LEARNING JOURNEY */
+
+.timeline{
+margin-top:40px;
+border-left:3px solid #4f46e5;
+padding-left:25px;
+}
+
+.timeline-item{
+margin-bottom:35px;
+}
+
+.timeline-title{
+font-weight:700;
+margin-bottom:5px;
+}
+
+.timeline-date{
+font-size:13px;
+color:#6b7280;
+margin-bottom:6px;
+}
+
+.timeline-desc{
+font-size:14px;
+color:#4b5563;
+line-height:1.6;
+}
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.skill-card{
+background:white;
+padding:22px;
+border-radius:14px;
+border:1px solid #e5e7eb;
+transition:0.3s;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.skill-card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.skill-card h3{
+margin:0;
+font-family:'Outfit';
+font-size:18px;
+color:#111827;
+}
+
+.skill-card p{
+font-size:14px;
+color:#6b7280;
+margin:10px 0 15px 0;
+line-height:1.6;
+}
+/* HOBBIES / INTERESTS */
+
+.hobby-grid{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+max-width:650px;
+}
+
+.hobby-card{
+background:#eef2ff;
+padding:10px 16px;
+border-radius:10px;
+font-size:13px;
+font-weight:500;
+color:#1f2937;
+border:1px solid #e5e7eb;
+transition:all 0.25s ease;
+cursor:default;
+}
+
+/* Hover Effect */
+
+.hobby-card:hover{
+background:#4f46e5;
+color:white;
+border-color:#4f46e5;
+transform:translateY(-3px);
+box-shadow:0 10px 20px rgba(0,0,0,0.12);
+}
+/* EDUCATION */
+
+.education-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.education-card{
+background:white;
+padding:22px;
+border-radius:14px;
+border:1px solid #e5e7eb;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.education-card:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.education-degree{
+font-family:'Outfit';
+font-size:18px;
+font-weight:700;
+margin-bottom:5px;
+}
+
+.education-school{
+font-size:14px;
+color:#4f46e5;
+font-weight:600;
+margin-bottom:4px;
+}
+
+.education-year{
+font-size:13px;
+color:#6b7280;
+margin-bottom:8px;
+}
+
+.education-desc{
+font-size:14px;
+color:#4b5563;
+line-height:1.6;
+}
+.cert-btn{
+display:inline-block;
+background:#4f46e5;
+color:white;
+padding:6px 12px;
+border-radius:6px;
+font-size:12px;
+text-decoration:none;
+transition:0.2s;
+}
+
+.cert-btn:hover{
+background:#3730a3;
+}
+
+.cert-link{
+display:inline-block;
+margin-top:10px;
+padding:6px 12px;
+font-size:13px;
+background:#4f46e5;
+color:white;
+border-radius:6px;
+text-decoration:none;
+transition:0.2s;
+}
+
+.cert-link:hover{
+background:#544db7;
+}
+/* RESEARCH */
+
+.research-card{
+background:white;
+color:rgb(12, 12, 12);
+padding:28px;
+border-radius:14px;
+margin-top:25px;
+}
+
+.research-tags{
+margin-top:10px;
+}
+
+.rtag{
+background:#6f69dc;
+padding:4px 9px;
+border-radius:5px;
+font-size:12px;
+margin-right:5px;
+}
+
+/* CONTACT */
+
+.contact-box{
+margin-top:25px;
+line-height:2;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:50px;
+padding:22px;
+text-align:center;
+background:#111827;
+color:white;
+font-size:14px;
+}
+
+@media(max-width:900px){
+
+#home{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-photo-wrap{
+margin:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a class="nav-logo"><span>R</span>uchi Prajapati</a>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#journey">Learning Journey</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section id="home">
+
+<div class="home-container">
+
+<div class="home-text">
+
+<h1 class="hero-name">
+Hi, I'm <br><em>Ruchi Prajapati</em>
+</h1>
+
+<div class="hero-role">
+B.Tech Student — Electronics & Communication Engineering
+</div>
+
+<p class="hero-desc">
+
+An Electronics and Communication Engineering student driven by curiosity for emerging technologies, wireless communication systems, and innovative engineering solutions.
+
+</p>
+
+</div>
+
+
+
+<div class="home-image">
+
+<div class="profile-circle">
+<img src="https://i.ibb.co/p66LtsR0/ruchi.png" alt="ruchi" border="0">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+</section>
+<section id="about">
+
+<h2 class="section-title">About <em>Me</em></h2>
+
+<p class="section-sub">
+
+I am currently pursuing a B.Tech in Electronics and Communication Engineering with a strong interest in wireless communication systems, signal processing, and emerging technologies such as next-generation 6G networks. I enjoy exploring how theoretical concepts in electronics can be applied to real-world communication systems through projects, simulations, and research-oriented learning.
+
+</p>
+
+<p class="section-sub">
+
+In my free time, I enjoy creative and intellectually stimulating activities such as painting, sketching, and learning about space science and astrophysics. I also enjoy playing musical instruments like the piano and flute, playing badminton, and experimenting with cooking.
+
+</p>
+<h3 style="margin-top:25px;">Interests</h3>
+<div class="hobby-grid">
+
+<div class="hobby-card">🎨 Painting</div>
+
+<div class="hobby-card">✏️ Sketching</div>
+
+<div class="hobby-card">🌌 Learning Space Theory</div>
+
+<div class="hobby-card">🎵 Playing Musical Instruments (Piano & Flute)</div>
+
+<div class="hobby-card">🏸 Badminton</div>
+
+<div class="hobby-card">🍳 Cooking</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2 class="section-title">Education & <em>Qualifications</em></h2>
+
+<p class="section-sub">
+My academic background and certifications that contribute to my technical knowledge.
+</p>
+
+<div class="education-grid">
+
+<div class="education-card">
+
+<div class="education-degree">
+B.Tech – Electronics & Communication Engineering
+</div>
+
+<div class="education-school">
+Pandit Deendayal Energy University
+</div>
+
+<div class="education-year">
+2023 – Present
+</div>
+
+<div class="education-desc">
+Studying communication systems, signal processing, electronics, and emerging wireless technologies.
+</div>
+
+</div>
+
+<div class="education-card">
+
+<div class="education-degree">
+Higher Secondary Education (Science)
+</div>
+
+<div class="education-school">
+St. Xavier High School Hansol
+</div>
+
+<div class="education-year">
+2021 – 2023
+</div>
+
+<div class="education-desc">
+Completed science stream with Physics, Chemistry and Mathematics.
+</div>
+
+</div>
+
+<div class="education-card">
+
+<div class="education-degree">
+Rocket Propulsion and Spacecraft Dynamics
+</div>
+
+<div class="education-school">
+Kodacy – Space Education Platform (ISRO Associated)
+</div>
+
+<div class="education-year">
+Completed: August 2025
+</div>
+
+<div class="education-desc">
+Successfully completed a certification course on Rocket Propulsion and Spacecraft Dynamics focused on space propulsion concepts, spacecraft motion, and fundamentals of space engineering.
+</div>
+
+<a href="https://i.ibb.co/01HFvMc/isro.jpg" target="_blank" class="cert-link">
+View Certificate
+</a>
+
+</div>
+</div>
+
+</section>
+
+<section id="journey">
+
+<h2 class="section-title">My Learning <em>Journey</em></h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-title">Started Engineering Journey</div>
+<div class="timeline-date">2023</div>
+<div class="timeline-desc">
+Started B.Tech in Electronics & Communication Engineering and began learning electronics fundamentals and programming.
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-title">Hands-On Projects</div>
+<div class="timeline-date">2024</div>
+<div class="timeline-desc">
+Worked on projects involving Arduino systems, sensors, and simulation tools to apply theoretical knowledge.
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-title">Research Exploration</div>
+<div class="timeline-date">2025 </div>
+<div class="timeline-desc">
+Exploring research topics in next-generation wireless communication technologies including 6G systems.
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Academic <em>Projects</em></h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<div class="project-name">Multi-Room AQI Detection System</div>
+<p class="project-desc">
+Developing a low-cost indoor air quality monitoring system using Arduino and environmental sensors with centralized monitoring.
+</p>
+<div class="project-techs">
+<span class="ptag">Arduino</span>
+<span class="ptag">Sensors</span>
+<span class="ptag">IoT</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-name">Gravitational Wave Simulation</div>
+<p class="project-desc">
+Modeling gravitational wave signals from binary black hole mergers using MATLAB simulation.
+</p>
+<div class="project-techs">
+<span class="ptag">MATLAB</span>
+<span class="ptag">Simulation</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Technical <em>Skills</em></h2>
+
+<div class="skills-grid">
+
+
+
+
+<div class="skill-card">
+<h3>MATLAB</h3>
+<p>Simulation, signal analysis and engineering modeling.</p>
+<a href="https://i.ibb.co/v6qqnBj8/matlab.jpg" target="_blank" class="cert-btn">View Certificate</a>
+</div>
+
+<div class="skill-card">
+<h3>Arduino</h3>
+<p>Microcontroller programming and sensor interfacing.</p>
+<a href="https://i.ibb.co/KxjVYd6N/arduino.jpg" target="_blank" class="cert-btn">View Certificate</a>
+
+</div>
+
+<div class="skill-card">
+<h3>Signal Processing</h3>
+<p>Understanding digital signal analysis and communication signals.</p>
+<a href="https://i.ibb.co/C5d66nVG/signal.jpg" target="_blank" class="cert-btn">View Certificate</a>
+</div>
+
+<div class="skill-card">
+<h3>Communication Systems</h3>
+<p>Study of wireless communication and modulation techniques.</p>
+</div>
+
+<div class="skill-card">
+<h3>IoT Basics</h3>
+<p>Building connected sensor systems and monitoring platforms.</p>
+</div>
+<div class="skill-card">
+<h3>Python</h3>
+<p>Programming, scripting and data analysis.</p>
+
+</div>
+
+</section>
+
+<section id="research">
+
+<h2 class="section-title">Research <em>Work</em></h2>
+
+<div class="research-card">
+
+<h3>Research on 6G Communication Technologies (Ongoing)</h3>
+
+<p>
+
+Under faculty guidance in the Department of Electronics & Communication Engineering.
+
+Studying next-generation 6G wireless communication systems and analyzing limitations of 5G networks.
+
+Exploring multiple access techniques such as NOMA and wireless system modeling.
+
+</p>
+
+<div class="research-tags">
+<span class="rtag"><b>6G </b></span>
+<span class="rtag"><b>NOMA</b></span>
+<span class="rtag"><b>Wireless Systems</b></span>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact <em>Me</em></h2>
+
+<div class="contact-box">
+
+<a href="ruchi05prajapati.gmail.com"></a>
+Email: ruchi05prajapati.gmail.com<br>
+LinkedIn: <a href="https://www.linkedin.com/in/ruchi-prajapati-1510ba314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-link">
+RUCHI PRAJAPATI
+        </a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Ruchi Prajapati | B.Tech ECE Portfolio
+</footer>
+
+</body>
+</html>
